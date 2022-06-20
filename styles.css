@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+nav {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav .logo {
+    width: 20%
+}
+nav ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+    padding-left: 10px;
+}
+
+nav ul li a:hover {
+    transition: .5s;
+    color: #F77E21;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav .logo {
+        width: auto;
+    }
+    nav ul {
+        width: 100%;
+        justify-content: space-around;
+        padding: 20px 0 ;
+        margin: 0;
+        
+    }
+    nav ul li {
+        padding: 0 ;
+        margin: 0;
+    }
+}
+.hero {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: max-content;
+}
+
+.hero main {
+    background-image: url(./assets/images/top-left-bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero main h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+}
+.hero main h5 {
+    color: #fff;
+    letter-spacing: 2px;
+}
+.action-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    text-decoration: none;
+    background-color:#fff;
+    color: #F77E21;
+}
+@media screen and (max-width: 600px) {
+    .hero {
+        grid-template-columns: auto;
+        grid-template-rows: auto max-content;
+    }    
+    .hero main {
+        padding: 40px 0;
+    }
+    .hero .action-btn {
+        padding: 5px 10px;
+    }
+}
+.about {
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content;
+}
+.about .about-info {
+   padding-right: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.about-info h1 {
+    font-weight: 800;
+    margin: 30px 0;
+}
+.about-img-grid {
+    display: flex;
+    justify-content: space-between;
+}
+.about-img-grid img {
+    width: 33%;
+    object-fit: contain;
+}
+
+.video img {
+    object-fit: cover;
+    width:100%;
+    margin-left: auto;
+}
+@media screen and (max-width: 600px) {
+    .about {
+        grid-template-columns: auto;
+        grid-template-rows: auto max-content;
+    } 
+    .about .about-info {
+        padding: 20px 0;
+     }
+}
